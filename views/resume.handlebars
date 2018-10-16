@@ -1,0 +1,35 @@
+<form action="/upload" method="post" enctype="multipart/form-data">
+          <div class="custom-file mb-3">
+            <input type="file" name="file" id="file" class="custom-file-input">
+            <label for="file" class="custom-file-label">Choose File</label>
+          </div>
+          <input type="submit" value="Submit" class="btn btn-primary btn-block">
+        </form>
+        
+        <hr>
+       <!--{{#if files}}
+           {{#each files}}
+            <div class="card card-body mb-3">
+              {{#if file.isImage}} 
+                <img src="image/<%= file.filename %>" alt="">
+                {{else}}
+                {{file.filename}}
+                 {{/if}}   
+                      <form method="POST" action="/files/<%= file._id %>?_method=DELETE">
+                        <button class="btn btn-danger btn-block mt-4">Delete</button>
+                      </form>
+            </div>
+            {{/each}}
+            {{else}} 
+                <p>No files to show</p>
+                {{/if}}
+      </div>
+    </div>
+  </div>-->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>

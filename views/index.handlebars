@@ -1,0 +1,15 @@
+<h5>Articles of {{user.name}}</h5>
+<ul class="list-group">
+  
+
+  {{#each articles}}
+      <li class="list-group-item">
+     
+        <a href="/article/{{this._id}}"> {{this.title}}</a>
+        <a href="/article/{{this._id}}/answer">Answer</a>
+        </li>
+       
+      {{/each}}
+        </ul>
+        
+      
